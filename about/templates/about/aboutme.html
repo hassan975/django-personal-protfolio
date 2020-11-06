@@ -1,0 +1,9 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+{% for project in projects %}
+<h1>{{ project.title }}</h1>
+<p>{{ project.description|striptags }}</p>
+<p>Instagram Id-<a href="{{ project.InstaURL }}">  hassan__bilal__</a></p>
+<p>Gmail - {{ project.Gmail }}</p>
+{% endfor %}
+{% endblock %}
